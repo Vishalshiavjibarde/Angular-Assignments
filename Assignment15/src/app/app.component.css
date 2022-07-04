@@ -1,0 +1,22 @@
+
+.head{
+    text-align: center;
+    display: flex;
+    padding-left: 400px;
+    margin-bottom: 50px;
+}
+.head img{
+    height: 100px;
+    padding-left: 30px;
+}
+
+.mid{
+    
+    padding-left: 500px;
+}
+
+.center{
+    
+    padding-left: 450px;
+    padding-right: 450px;
+}

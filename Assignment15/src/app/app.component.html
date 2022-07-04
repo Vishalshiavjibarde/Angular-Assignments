@@ -1,0 +1,101 @@
+
+
+<div class="head">
+
+  <h1>Contact Our <br>Customer Support Center</h1>
+  <img src="./assets/bg.png" >
+</div>
+
+<div class="mid">
+
+<h3>Contact Information</h3>
+<h5>please fill out your contact Information</h5>
+
+</div>
+
+
+
+
+<form  [formGroup] = "MyForm" class="info">
+  
+  <div class="form-group">
+    <h5>Name*</h5>
+    <div ><input [class.is-invalid]="MyForm.get('firstname')?.invalid" type="text" class="form-control " formControlName="firstname">
+      <small [class.d-none]="MyForm.get('firstname')?.valid" class="text-danger"> First Name </small>
+       </div>
+    <div><input  [class.is-invalid]="MyForm.get('lastname')?.invalid" type="text" class="form-control " formControlName="lastname">
+     <small [class.d-none]="MyForm.get('lastname')?.valid" class="text-danger"> Last Name</small>
+    </div>
+  </div>
+
+
+  <div  class="form-group">
+    <h5>E-mail*</h5>
+    <div ><input [class.is-invalid]="MyForm.get('email')?.invalid" type="email" class="form-control "formControlName="email"></div>
+  </div>
+
+
+  <div class="form-group">
+    <h5>Contact*</h5>
+    <div ><input  [class.is-invalid]="MyForm.get('contact')?.invalid" [class.is-valid]="MyForm.get('contact')?.valid"  type="text" class="form-control "formControlName="contact">
+      <small ></small>
+    </div>
+  </div>
+    
+
+
+  <div  class="form-group">
+    <h5>City*</h5>
+    <div ><input [class.is-invalid]="MyForm.get('City')?.invalid" [class.is-valid]="MyForm.get('City')?.valid" type="text" class="form-control "formControlName="City"></div>
+  </div>
+  
+  <div class="form-group">
+    <h5>State*</h5>
+    <select  >
+      <option value="Maharashtra">Maharashtra</option>
+      <option value="Gujarat">Gujarat</option>
+      <option value="Utter Pradesh">Utter pradesh</option>
+    </select>
+  </div>
+
+  <div  class="form-group">
+    <h5>Zip*</h5>
+    <div ><input [class.is-invalid]="MyForm.get('zip')?.invalid" [class.is-valid]="MyForm.get('zip')?.valid" type="text" class="form-control "formControlName="zip"></div>
+  </div>
+
+  <div  class="form-group">
+    <h5>Comment*</h5>
+    <div ><input  [class.is-invalid]="MyForm.get('comment')?.invalid" [class.is-valid]="MyForm.get('comment')?.valid" type="text" class="form-control "formControlName="comment"></div>
+  </div><br>
+
+
+<div class="form-group">
+  <!-- <div class="center"> -->
+    <button type="button" class="btn btn-success" [disabled]="!MyForm.valid" style=" margin-left: 550px; padding-right:100px; padding-left:100px">Submit</button>
+  </div><br>
+<!-- </div> -->
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
